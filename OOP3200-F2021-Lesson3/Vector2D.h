@@ -9,6 +9,13 @@ class Vector2D
 public:
 	// CONSTRUCTOR(S)
 	Vector2D();
+	Vector2D(float value);
+	Vector2D(float x, float y);
+
+	// COPY CONSTRUCTOR
+	Vector2D(const Vector2D& vector_2d);
+
+	
 
 	// DESTRUCTOR
 	~Vector2D();
