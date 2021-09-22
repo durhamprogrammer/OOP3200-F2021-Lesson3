@@ -15,10 +15,12 @@ public:
 	// COPY CONSTRUCTOR
 	Vector2D(const Vector2D& vector_2d);
 
-	
-
 	// DESTRUCTOR
 	~Vector2D();
+
+	// OPERATOR OVERRIDES
+	Vector2D operator=(const Vector2D& rhs_vector);
+	
 
 	// GETTERS (Accessors)
 	float GetX() const;
