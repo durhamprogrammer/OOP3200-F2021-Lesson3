@@ -2,6 +2,7 @@
 
 #include <sstream>
 #include <cmath>
+#include <iostream>
 
 Vector2D::Vector2D()
 {
@@ -81,8 +82,10 @@ std::ostream& operator<<(std::ostream& out, const Vector2D& rhs_vector)
 
 std::istream& operator>>(std::istream& in, Vector2D& rhs_vector)
 {
+	std::cout << "X: ";
 	in >> rhs_vector.m_x;
 	in.ignore();
+	std::cout << "Y: ";
 	in >> rhs_vector.m_y;
 	return in;
 }
